@@ -8,7 +8,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <Navbar/>
       {/* Nút mở sidebar */}
       <button
@@ -30,9 +30,9 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-[#6A1B9A] text-white transition-transform duration-300 ${
+        className={`fixed top-0 left-0 h-screen w-64 bg-[#6A1B9A] text-white  transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:relative md:translate-x-0 md:64 w-64`}
+        } md:relative md:translate-x-0 md:w-64`}
       >
         {/* Nút đóng sidebar */}
         <button
